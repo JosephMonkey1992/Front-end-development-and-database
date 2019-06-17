@@ -1,12 +1,12 @@
 # Front-end-development
 HTML, CSS, JavaScript.
 ## Top view
--[1.table content]- (#1.table content)
--[2.create moving slides show]- (#2.create moving slides show)
--[3.embed video]- (#3.embed video)
--[4.CSS formating]- (#4.CSS formating)
--[5.User Validation]- (#5.User Validation)
-### 1. table content
+- [1.table content](#1.table content)
+- [2.create moving slides show](#2.create moving slides show)
+- [3.embed video](#3.embed video)
+ [4.CSS formating](#4.CSS formating)
+ [5.User Validation](#5.User Validation)
+### 1.table content
 create table content or navigation bar by div.
 ```html
 <html>
@@ -34,7 +34,7 @@ create table content or navigation bar by div.
 </body>
 </html>
 ```
-### 2. create moving slides show 
+### 2.create moving slides show 
 using javascript to create a moving slide show as following:
 ```html
 <html>
@@ -67,7 +67,7 @@ using javascript to create a moving slide show as following:
 </body>
 </html>
 ```
-### 3. embed video
+### 3.embed video
 using iframe to embed video or map.
 ```html
 <p>
@@ -79,7 +79,7 @@ using iframe to embed video or map.
             </iframe>
       </p>
 ```
-### 4. CSS formating
+### 4.CSS formating
 as following
 ```CSS
 /* CSS */
