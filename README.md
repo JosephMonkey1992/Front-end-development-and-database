@@ -116,3 +116,82 @@ padding: 30px 30px 30px 30px;
 background-image:url("giphy.gif");
 }
 ```
+### 5.User Validation
+return to JavaScript file by 'name="jform"'. These coding contain PHP function which is discussed at end-front part.
+```html
+<div class="page">
+		   <form name="jform"method="post" action="adduser.php" onsubmit="return checkForm()">
+			<p><h2 style="color:snow"><b>Register:</b></h3></p>
+			<p><h3 style="color:snow"><b>Username: <input type="text" name="username" size="15" maxlength="10" /></b></h3></p>
+			<p><h3 style="color:snow"><b>JHU E-mail( <u>@jhu.edu</u> ): <input type="email" name="email" size="30" />	</b></h3></p>				
+			<p><h3 style="color:snow"><b>Password(>5 digits): <input type="password" name="password" size="15" maxlength="30" /></b></h3></p>
+			<input type="submit" value="Submit" name="submit" onclick="checkForm()" />
+			<hr /> 	
+		   </form>
+		   <form name="jform1"method="post" action="userlogin.php">
+			<p><h2 style="color:snow"><b>Log in:</b></h3></p>
+			<p><h3 style="color:snow"><b>Username: <input type="text" name="username1" size="15" maxlength="10" /></b></h3></p>
+			<p><h3 style="color:snow"><b>Password(>5 digits): <input type="password" name="password1" size="15" maxlength="30" /></b></h3></p>
+			<input type="submit" value="Submit" name="submit"/>
+		   </form>	
+
+		  
+</div>
+```
+This is to validate user information input.
+```JavaScript
+function checkForm() 
+{
+	var name;
+  	if ( checkUsername() && checkEmail() && checkPassword()){
+		name=document.jform.username.value;
+		alert("Hello, "+name+": Welcome to Carey Secret Recipe Book.");
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function checkUsername() {
+	var userName=document.jform.username.value;
+	if (userName=="") {
+		alert ("Please enter your username.");
+		document.jform.username.focus();
+		return false;
+	}
+	return true;
+}
+
+function checkEmail() {
+	var jhuEmail=document.jform.email.value;
+	if (jhuEmail=="") {
+		alert ("Please enter your @jhu.edu email.");
+		document.jform.email.focus();
+		return false;
+	} 
+	else if (!(jhuEmail.includes("@jhu.edu"))) {
+		alert ("Please enter your @jhu.edu email.");
+		document.jform.email.value="";
+		document.jform.email.focus();
+		return false;
+	}
+	return true;
+}
+
+function checkPassword() {
+	var password=document.jform.password.value;
+	if (password=="") {
+		alert ("Please enter a password for your account.");
+		document.jform.password.value="";
+		document.jform.password.focus();
+		return false;
+	}
+	else if (password.length<5){
+		alert ("Please enter a password with more than 5 digits.");
+		document.jform.password.value="";
+		document.jform.password.focus();
+		return false;
+	}
+	return true;
+}
+```
