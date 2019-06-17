@@ -3,6 +3,8 @@ HTML, CSS, JavaScript.
 ## Top view
 [1.table content] (#1.table content)
 [2.create moving slides show] (#2.create moving slides show)
+[3.embed video] (#3.embed video)
+[4.CSS formating] (#3.CSS formating)
 ### 1. table content
 create table content or navigation bar by div.
 ```html
@@ -63,4 +65,53 @@ using javascript to create a moving slide show as following:
       </script>
 </body>
 </html>
+```
+### 3. embed video
+using iframe to embed video or map.
+```html
+<p>
+            <iframe  float="left" width="425" height="344" src="https://www.youtube.com/embed/J6xFRlG5Qxg" frameborder="0" allowfullscreen>
+            </iframe>
+            <iframe  float="center" width="425" height="344" src="https://www.youtube.com/embed/nlWMWko_Hfo" frameborder="0" allowfullscreen>
+            </iframe>
+            <iframe  float="right" width="425" height="344" src="https://www.youtube.com/embed/aafmrrx7Bh4" frameborder="0" allowfullscreen>
+            </iframe>
+      </p>
+```
+### 4. CSS formating
+as following
+```CSS
+/* CSS */
+body	{
+font-family:	Arial;
+background-color:	black;}
+.page	{
+border:	1px	solid	darkred;
+padding:	10px;}
+h1	{
+font-family:	Arial;
+color:	white;}
+i	{
+color:	darkblue;}
+p#intro	{
+font-size:	100%;}
+p	{
+font-size:	75%;}
+a:link	{	
+color:	silver;}
+a:visited	{	
+color:	gold;}
+a:hover	{
+font-style:	italic;}
+a:active	{	
+color:	red;}
+p.ex1 {
+border: 1px solid darkred;        ## this is used to line-circle the paragraph
+padding: 35px 70px 50px 90px;
+font-size: 100%;}
+form.ex2 {
+border: 1px solid darkred;
+padding: 30px 30px 30px 30px;
+background-image:url("giphy.gif");
+}
 ```
