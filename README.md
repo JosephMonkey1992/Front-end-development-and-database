@@ -1,4 +1,4 @@
-# Front-end-development
+# Front-end Development
 HTML, CSS, JavaScript.
 ## Top view
 - [1.table content](#1.table-content)
