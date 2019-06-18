@@ -6,7 +6,7 @@ HTML, CSS, JavaScript.
 - [3.embed video](#3.embed-video)
 - [4.CSS formating](#4.CSS-formating)
 - [5.User Validation](#5.User-Validation)
-- [6.next thing](#6.next thing)
+- [6.next thing](#6.next-thing)
 ### 1.table content
 create table content or navigation bar by div.
 ```html
