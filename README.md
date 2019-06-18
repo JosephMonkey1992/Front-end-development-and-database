@@ -6,6 +6,7 @@ HTML, CSS, JavaScript.
 - [3.embed video](#3.embed-video)
 - [4.CSS formating](#4.CSS-formating)
 - [5.User Validation](#5.User-Validation)
+- [6.next thing](#6.next thing)
 ### 1.table content
 create table content or navigation bar by div.
 ```html
@@ -193,5 +194,23 @@ function checkPassword() {
 		return false;
 	}
 	return true;
+}
+```
+### 6.next thing
+this is to click for next image or other thing.
+```JavaScript
+##create a array at first
+
+var picArray=["Feijoada1.jpg","French potato2.jpg","French potato3.jpg","Strawberry cucumber1.jpg","Feijoada-Light.jpg","Spiced-roast-side-of-salmon.jpg","Super-Fast-Sassy-Salmon-Stir-Fry-Supper-w.jpg","festive-foie-gras-and-toast--takedahrs.jpg"];
+
+var counter=0;
+##onclick function
+function nextPic () {
+
+	var picNumber;
+	
+	counter++;
+	picNumber=counter % picArray.length;
+	document.thingImg.src="images/"+picArray[picNumber];
 }
 ```
