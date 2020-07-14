@@ -1,0 +1,34 @@
+/* CSS */
+body	{
+font-family:	Arial;
+background-color:	black;}
+.page	{
+border:	1px	solid	darkred;
+padding:	10px;}
+h1	{
+font-family:	Arial;
+color:	white;}
+i	{
+color:	darkblue;}
+p#intro	{
+font-size:	100%;}
+p	{
+font-size:	75%;}
+a:link	{	
+color:	silver;}
+a:visited	{	
+color:	gold;}
+a:hover	{
+font-style:	italic;}
+a:active	{	
+color:	red;}
+p.ex1 {
+border: 1px solid darkred;
+padding: 35px 70px 50px 90px;
+font-size: 100%;}
+form.ex2 {
+border: 1px solid darkred;
+padding: 30px 30px 30px 30px;
+background-image:url("giphy.gif");
+}
+            
